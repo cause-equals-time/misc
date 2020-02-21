@@ -80,6 +80,34 @@ public class ArrList {
 
 
 
+    public boolean contains(Object element){
+        Node current = head;
+
+        while (current!=null){
+            if (current.data.equals(element)) return true;
+            current=current.next;
+        }
+
+        return false;
+    }
+
+
+
+    public int indexOf(Object element){
+        Node current = head;
+        int index=0;
+
+        while (current!=null){
+            if (current.data.equals(element)) return index;
+            current=current.next;
+            index++;
+        }
+
+        return -1;
+    }
+
+
+
     public void insert(int index, Object element){
         Node current = head;
 
