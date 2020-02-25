@@ -128,14 +128,4 @@ public class ZeroSumArray {
         }
         return nlist;
     }
-
-    public boolean check(){
-
-        int sumcheck = 0;
-        for (Integer integer : nlist) {
-            sumcheck += integer;
-        }
-        System.out.println(nlist.size() + " elements sum up to " + sumcheck);
-        return sumcheck==0;
-    }
 }
